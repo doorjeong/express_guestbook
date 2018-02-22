@@ -6,7 +6,8 @@
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node app.js"
+    "start": "node app.js",
+    "hello": "echo \"안녕하세요~\""
   },
   "author": "Munjeong Kim",
   "license": "ISC",
