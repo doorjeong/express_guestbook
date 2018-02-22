@@ -1,0 +1,18 @@
+<% include header %>
+
+<h2>Write a new entry</h2>
+<form method="post" role="form">
+    <div class="form-group">
+        <label for="title">Title</label>
+        <input type="text" class="form-control" id="title" name="title" placeholder="타이틀 입력" required="require" />
+    </div>
+    <div class="form-group">
+        <label for="content">Entry Text</label>
+        <textarea class="form-control" id="body" name="body" placeholder="내용 입력" rows="3" required="require"></textarea>
+    </div>
+    <div class="form-group">
+        <input type="submit" value="Post entry" class="btn btn-primary" />
+    </div>
+</form>
+
+<% include footer %>

@@ -18,7 +18,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 
 app.get("/", function(req, res){
     res.render("index");
-    console.log("index");
+    console.log("index", entries);
 });
 app.get("/new-entry", function(req, res){
     res.render("new-entry");
@@ -31,7 +31,7 @@ app.post("/new-entry", function(req, res){
     }
     entries.push({
         title: req.body.title,
-        content: req.body.body,
+        body: req.body.body,
         published: new Date()
     });
     res.redirect("/");
